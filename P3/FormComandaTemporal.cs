@@ -16,7 +16,7 @@ namespace P3
         public FormComandaTemporal()
         {
             InitializeComponent();
-            dataGridView_temporal.DataSource = ComandaTemporal.listarComandaTemporal();
+            //dataGridView_temporal.DataSource = ComandaTemporal.listarComandaTemporal();
             //comboBox_Mozo.ValueMember = "nombre";
         }
 
@@ -106,51 +106,22 @@ namespace P3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string nro_comanda = Convert.ToString(dataGridView_temporal.CurrentRow.Cells["id_temporal"].Value);
-            string cod_producto_simple = Convert.ToString(dataGridView_temporal.CurrentRow.Cells["id_productosimple"].Value);
-            string cod_producto_compuesto = Convert.ToString(dataGridView_temporal.CurrentRow.Cells["id_productocompuesto"].Value);
-            string apellido = Convert.ToString(dataGridView_temporal.CurrentRow.Cells["apellido"].Value);
-            string dni = Convert.ToString(dataGridView_temporal.CurrentRow.Cells["dni"].Value);
-            string fecha_nacimiento = Convert.ToString(dataGridView_temporal.CurrentRow.Cells["fecha_nacimiento"].Value);
-
-            button_Guardar_Modificado.Enabled = true;
-            button_Agregar_Mozo.Enabled = false;
-
-            textBox_ID_Mozo.Text = indice;
-            textBox_Nombre_Mozo.Text = nombre;
-            textBox_Apellido_Mozo.Text = apellido;
-            textBox_DNI_Mozo.Text = dni;
-            textBox_Fecha_Nacimiento.Text = fecha_nacimiento;
-
-            string indice_modificado = textBox_ID_Mozo.Text;
-            string nombre_modificado = textBox_Nombre_Mozo.Text;
-            string apellido_modificado = textBox_Apellido_Mozo.Text;
-            string dni_modificado = textBox_DNI_Mozo.Text;
-            string fecha_nacimiento_modificado = textBox_Fecha_Nacimiento.Text;
+                
         }
 
         private void button_aceptar_modificado_Click(object sender, EventArgs e)
         {
-            try
-            {
+            
+        }
 
-                if (Mozo_Neg.guardarModificadoMozo(Convert.ToInt32(textBox_ID_Mozo.Text), textBox_Nombre_Mozo.Text, textBox_Apellido_Mozo.Text, textBox_DNI_Mozo.Text, textBox_Fecha_Nacimiento.Text))
-                {
-                    Funciones.mOk(this, "Se a modificado correctamente");
-                    limpiar();
-                    dataGridView_Mozos.DataSource = Mozo_Neg.listarMozos();
-                    resetear();
-                }
-                else
-                {
-                    Funciones.mError(this, "Error al modificar");
-                }
+        private void button9_Click(object sender, EventArgs e)
+        {
 
-            }
-            catch (Exception)
-            {
-                Funciones.mError(this, "Error al modificar");
-            }
+        }
+
+        private void dataGridView_temporal_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

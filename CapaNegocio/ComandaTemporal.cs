@@ -10,9 +10,11 @@ namespace CapaNegocio
 {
     public class ComandaTemporal
     {
+        /*
         public static DataTable listarComandaTemporal()
         {
             return Temporal_db.tablaTemporal_db();
         }
+        */
     }
 }

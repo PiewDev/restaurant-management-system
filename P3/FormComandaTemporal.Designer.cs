@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.dataGridView_temporal = new System.Windows.Forms.DataGridView();
+            this.Nro_Comanda = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cod_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -51,12 +57,6 @@
             this.button_cancenlar_modificado = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.label_valor_nro_mesa = new System.Windows.Forms.Label();
-            this.Nro_Comanda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cod_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox_tipo_producto = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_temporal)).BeginInit();
@@ -76,6 +76,37 @@
             this.dataGridView_temporal.Name = "dataGridView_temporal";
             this.dataGridView_temporal.Size = new System.Drawing.Size(643, 176);
             this.dataGridView_temporal.TabIndex = 0;
+            this.dataGridView_temporal.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_temporal_CellContentClick);
+            // 
+            // Nro_Comanda
+            // 
+            this.Nro_Comanda.HeaderText = "N° Comanda";
+            this.Nro_Comanda.Name = "Nro_Comanda";
+            // 
+            // Cod_Producto
+            // 
+            this.Cod_Producto.HeaderText = "Cod. Producto";
+            this.Cod_Producto.Name = "Cod_Producto";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Tipo
+            // 
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            // 
+            // Subtotal
+            // 
+            this.Subtotal.HeaderText = "Subtotal";
+            this.Subtotal.Name = "Subtotal";
             // 
             // button1
             // 
@@ -258,6 +289,7 @@
             this.button9.TabIndex = 30;
             this.button9.Text = "Guardar";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // label_valor_nro_mesa
             // 
@@ -267,36 +299,6 @@
             this.label_valor_nro_mesa.Size = new System.Drawing.Size(35, 13);
             this.label_valor_nro_mesa.TabIndex = 31;
             this.label_valor_nro_mesa.Text = "label1";
-            // 
-            // Nro_Comanda
-            // 
-            this.Nro_Comanda.HeaderText = "N° Comanda";
-            this.Nro_Comanda.Name = "Nro_Comanda";
-            // 
-            // Cod_Producto
-            // 
-            this.Cod_Producto.HeaderText = "Cod. Producto";
-            this.Cod_Producto.Name = "Cod_Producto";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // Tipo
-            // 
-            this.Tipo.HeaderText = "Tipo";
-            this.Tipo.Name = "Tipo";
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            // 
-            // Subtotal
-            // 
-            this.Subtotal.HeaderText = "Subtotal";
-            this.Subtotal.Name = "Subtotal";
             // 
             // label1
             // 

@@ -188,5 +188,10 @@ namespace P3
             string categoria = textBox_Buscar_Producto_Compuesto.Text;
             dataGridView_ProductoCompuesto.DataSource = ProductoCompuesto_Neg.listarProductosCompuestos(categoria);
         }
+
+        private void FormProductoCompuesto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -189,5 +189,15 @@ namespace P3
             string categoria = textBox_Buscar_Producto_Simple.Text;
             dataGridView_Productos_Simples.DataSource = ProductoSimple_Neg.listarProductosSimples(categoria);
         }
+
+        private void FormProductoSimple_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox_Formulario_Producto_Simple_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

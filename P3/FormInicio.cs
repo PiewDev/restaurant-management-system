@@ -31,8 +31,7 @@ namespace P3
 
         private void button_Mesa_Inicio_Click(object sender, EventArgs e)
         {
-            FormMesa2 ventana_mesa = new FormMesa2();
-            ventana_mesa.Show();
+            
         }
 
         private void button_Producto_Simple_Click(object sender, EventArgs e)
@@ -55,8 +54,7 @@ namespace P3
 
         private void button_Pedido_Click(object sender, EventArgs e)
         {
-            FormMesas mesas = new FormMesas();
-            mesas.Show();
+            
         }
 
         private void button_Producto_Compuesto_Click(object sender, EventArgs e)

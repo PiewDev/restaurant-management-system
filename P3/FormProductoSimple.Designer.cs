@@ -50,6 +50,8 @@
             this.label_Buscar_Producto_Simple = new System.Windows.Forms.Label();
             this.textBox_Buscar_Producto_Simple = new System.Windows.Forms.TextBox();
             this.button_Buscar_Producto_Simple = new System.Windows.Forms.Button();
+            this.label_cantidad = new System.Windows.Forms.Label();
+            this.textBox_Cantidad_Producto_Simple = new System.Windows.Forms.TextBox();
             this.groupBox_Formulario_Producto_Simple.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Productos_Simples)).BeginInit();
             this.SuspendLayout();
@@ -149,6 +151,8 @@
             // 
             // groupBox_Formulario_Producto_Simple
             // 
+            this.groupBox_Formulario_Producto_Simple.Controls.Add(this.textBox_Cantidad_Producto_Simple);
+            this.groupBox_Formulario_Producto_Simple.Controls.Add(this.label_cantidad);
             this.groupBox_Formulario_Producto_Simple.Controls.Add(this.comboBox_Categoria_Producto_Simple);
             this.groupBox_Formulario_Producto_Simple.Controls.Add(this.textBox_ID_Producto_Simple);
             this.groupBox_Formulario_Producto_Simple.Controls.Add(this.label_ID_Producto_Simple);
@@ -170,6 +174,7 @@
             this.groupBox_Formulario_Producto_Simple.TabIndex = 14;
             this.groupBox_Formulario_Producto_Simple.TabStop = false;
             this.groupBox_Formulario_Producto_Simple.Text = "Producto Simple";
+            this.groupBox_Formulario_Producto_Simple.Enter += new System.EventHandler(this.groupBox_Formulario_Producto_Simple_Enter);
             // 
             // comboBox_Categoria_Producto_Simple
             // 
@@ -260,6 +265,22 @@
             this.button_Buscar_Producto_Simple.UseVisualStyleBackColor = true;
             this.button_Buscar_Producto_Simple.Click += new System.EventHandler(this.button_Buscar_Producto_Simple_Click);
             // 
+            // label_cantidad
+            // 
+            this.label_cantidad.AutoSize = true;
+            this.label_cantidad.Location = new System.Drawing.Point(30, 243);
+            this.label_cantidad.Name = "label_cantidad";
+            this.label_cantidad.Size = new System.Drawing.Size(49, 13);
+            this.label_cantidad.TabIndex = 20;
+            this.label_cantidad.Text = "Cantidad";
+            // 
+            // textBox_Cantidad_Producto_Simple
+            // 
+            this.textBox_Cantidad_Producto_Simple.Location = new System.Drawing.Point(123, 243);
+            this.textBox_Cantidad_Producto_Simple.Name = "textBox_Cantidad_Producto_Simple";
+            this.textBox_Cantidad_Producto_Simple.Size = new System.Drawing.Size(100, 20);
+            this.textBox_Cantidad_Producto_Simple.TabIndex = 21;
+            // 
             // FormProductoSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,6 +295,7 @@
             this.Controls.Add(this.groupBox_Formulario_Producto_Simple);
             this.Name = "FormProductoSimple";
             this.Text = "FormProductoSimple";
+            this.Load += new System.EventHandler(this.FormProductoSimple_Load);
             this.groupBox_Formulario_Producto_Simple.ResumeLayout(false);
             this.groupBox_Formulario_Producto_Simple.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Productos_Simples)).EndInit();
@@ -306,5 +328,7 @@
         private System.Windows.Forms.Label label_Buscar_Producto_Simple;
         private System.Windows.Forms.TextBox textBox_Buscar_Producto_Simple;
         private System.Windows.Forms.Button button_Buscar_Producto_Simple;
+        private System.Windows.Forms.TextBox textBox_Cantidad_Producto_Simple;
+        private System.Windows.Forms.Label label_cantidad;
     }
 }
