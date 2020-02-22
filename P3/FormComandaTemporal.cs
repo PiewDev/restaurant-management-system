@@ -24,13 +24,13 @@ namespace P3
         {
             int total = 0;      
 
-            foreach (DataGridViewRow row in dataGridView_temporal.Rows)
+            foreach (DataGridViewRow row in dataGridViewProductos.Rows)
             {
 
                 total += Convert.ToInt32(row.Cells[4].Value);
             }
 
-            label_valor_total.Text = total.ToString();
+            
         }
         /*
         private void button1_Click(object sender, EventArgs e)
@@ -120,6 +120,11 @@ namespace P3
         }
 
         private void dataGridView_temporal_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
         {
 
         }

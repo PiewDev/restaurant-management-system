@@ -47,11 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormArmarProductoCompuesto.cs">
+    <Compile Include="Productos\FormArmarProductoCompuesto2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormArmarProductoCompuesto.Designer.cs">
-      <DependentUpon>FormArmarProductoCompuesto.cs</DependentUpon>
+    <Compile Include="Productos\FormArmarProductoCompuesto2.Designer.cs">
+      <DependentUpon>FormArmarProductoCompuesto2.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCategoria.cs">
       <SubType>Form</SubType>
@@ -83,34 +83,34 @@
     <Compile Include="FormInicio.Designer.cs">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormListaMateriaPrima.cs">
+    <Compile Include="Productos\FormListaMateriaPrima.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormListaMateriaPrima.Designer.cs">
+    <Compile Include="Productos\FormListaMateriaPrima.Designer.cs">
       <DependentUpon>FormListaMateriaPrima.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormListaProductoCompuesto.cs">
+    <Compile Include="Productos\FormListaProductoCompuesto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormListaProductoCompuesto.Designer.cs">
+    <Compile Include="Productos\FormListaProductoCompuesto.Designer.cs">
       <DependentUpon>FormListaProductoCompuesto.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormListaProductoSimple.cs">
+    <Compile Include="Productos\FormListaProductoSimple.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormListaProductoSimple.Designer.cs">
+    <Compile Include="Productos\FormListaProductoSimple.Designer.cs">
       <DependentUpon>FormListaProductoSimple.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMateriaPrima.cs">
+    <Compile Include="Productos\FormMateriaPrima.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMateriaPrima.Designer.cs">
+    <Compile Include="Productos\FormMateriaPrima.Designer.cs">
       <DependentUpon>FormMateriaPrima.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMateriaPrimaUtilizada.cs">
+    <Compile Include="Productos\FormMateriaPrimaUtilizada.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMateriaPrimaUtilizada.Designer.cs">
+    <Compile Include="Productos\FormMateriaPrimaUtilizada.Designer.cs">
       <DependentUpon>FormMateriaPrimaUtilizada.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMesa2.cs">
@@ -131,22 +131,22 @@
     <Compile Include="FormMozo.Designer.cs">
       <DependentUpon>FormMozo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormProductoCompuesto.cs">
+    <Compile Include="Productos\FormProductoCompuesto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormProductoCompuesto.Designer.cs">
+    <Compile Include="Productos\FormProductoCompuesto.Designer.cs">
       <DependentUpon>FormProductoCompuesto.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormProductoSimple.cs">
+    <Compile Include="Productos\FormProductoSimple.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormProductoSimple.Designer.cs">
+    <Compile Include="Productos\FormProductoSimple.Designer.cs">
       <DependentUpon>FormProductoSimple.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormQueProducto.cs">
+    <Compile Include="Productos\FormQueProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormQueProducto.Designer.cs">
+    <Compile Include="Productos\FormQueProducto.Designer.cs">
       <DependentUpon>FormQueProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="FormReportePrecioXCategoria.cs">
@@ -175,8 +175,13 @@
     <Compile Include="FormReporteVentasXMozo.Designer.cs">
       <DependentUpon>FormReporteVentasXMozo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FormArmarProductoCompuesto.resx">
-      <DependentUpon>FormArmarProductoCompuesto.cs</DependentUpon>
+    <Compile Include="Test_Final_Programacion_3DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Test_Final_Programacion_3DataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Productos\FormArmarProductoCompuesto2.resx">
+      <DependentUpon>FormArmarProductoCompuesto2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCategoria.resx">
       <DependentUpon>FormCategoria.cs</DependentUpon>
@@ -193,19 +198,19 @@
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormListaMateriaPrima.resx">
+    <EmbeddedResource Include="Productos\FormListaMateriaPrima.resx">
       <DependentUpon>FormListaMateriaPrima.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormListaProductoCompuesto.resx">
+    <EmbeddedResource Include="Productos\FormListaProductoCompuesto.resx">
       <DependentUpon>FormListaProductoCompuesto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormListaProductoSimple.resx">
+    <EmbeddedResource Include="Productos\FormListaProductoSimple.resx">
       <DependentUpon>FormListaProductoSimple.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMateriaPrima.resx">
+    <EmbeddedResource Include="Productos\FormMateriaPrima.resx">
       <DependentUpon>FormMateriaPrima.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMateriaPrimaUtilizada.resx">
+    <EmbeddedResource Include="Productos\FormMateriaPrimaUtilizada.resx">
       <DependentUpon>FormMateriaPrimaUtilizada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMesa2.resx">
@@ -217,13 +222,13 @@
     <EmbeddedResource Include="FormMozo.resx">
       <DependentUpon>FormMozo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormProductoCompuesto.resx">
+    <EmbeddedResource Include="Productos\FormProductoCompuesto.resx">
       <DependentUpon>FormProductoCompuesto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormProductoSimple.resx">
+    <EmbeddedResource Include="Productos\FormProductoSimple.resx">
       <DependentUpon>FormProductoSimple.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormQueProducto.resx">
+    <EmbeddedResource Include="Productos\FormQueProducto.resx">
       <DependentUpon>FormQueProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormReportePrecioXCategoria.resx">
@@ -256,6 +261,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Test_Final_Programacion_3DataSet.xsc">
+      <DependentUpon>Test_Final_Programacion_3DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Test_Final_Programacion_3DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Test_Final_Programacion_3DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Test_Final_Programacion_3DataSet.xss">
+      <DependentUpon>Test_Final_Programacion_3DataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
